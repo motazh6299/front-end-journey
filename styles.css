@@ -1,0 +1,78 @@
+/* ==========================================================================
+   styles.css — the styles for index.html
+   Text wrapped in slash-star and star-slash is a CSS comment; the browser
+   ignores it. Note: comments CANNOT be nested (the first closer ends them).
+   ========================================================================== */
+
+/* --- The whole page --- */
+body {
+  /* font-family = the font. This "system" stack uses the nice default font
+     of whatever device the visitor is on (fast and clean). */
+  font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+
+  color: #333333;              /* text color. #333 = dark gray (softer than pure black) */
+  background-color: #eef7ff;   /* page background = very light gray */
+  line-height: 1.6;            /* space between lines of text — makes reading comfy */
+
+  max-width: 700px;            /* stop text from stretching too wide on big screens */
+  margin: 40px auto;           /* 40px top/bottom, "auto" left/right = CENTERS the page */
+  padding: 0 20px;             /* breathing room on the sides (0 top/bottom, 20px sides) */
+}
+
+/* --- The main heading --- */
+h1 {
+  color: teal;              /* a nice blue */
+  font-size: 40px;             /* make it big */
+  margin-bottom: 8px;          /* pull the paragraph below a bit closer */
+}
+
+/* --- Sub-headings --- */
+h2 {
+  color: green;              /* almost-black */
+  border-bottom: 2px solid #e2e8f0;  /* a light underline: width | style | color */
+  padding-bottom: 6px;        /* space between the text and that underline */
+  margin-top: 32px;           /* extra space ABOVE each section */
+}
+
+/* --- The list --- */
+ul {
+  background-color: #ffffff;   /* white box behind the list */
+  border: 1px solid #e2e8f0;   /* thin light-gray border */
+  border-radius: 8px;          /* rounded corners */
+  padding: 16px 16px 16px 36px;/* cushion inside (extra left room for bullets) */
+}
+
+li {
+  margin-bottom: 6px;          /* small gap between list items */
+}
+
+/* --- Links --- */
+a {
+  color: #2b6cb0;              /* blue */
+  text-decoration: none;       /* remove the default underline */
+  font-weight: bold;
+}
+
+/* This special ":hover" runs ONLY when the mouse is over the link.
+   Try hovering your links in the browser! */
+a:hover {
+  text-decoration: underline;  /* underline appears on hover */
+  color: #1a4b7a;              /* slightly darker blue */
+}
+
+/* --- The image --- */
+img {
+  border-radius: 8px;          /* rounded corners on the picture */
+  border: 4px solid #ffffff;   /* white frame */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* soft shadow underneath */
+  margin-top: 12px;
+}
+
+/* --- A REUSABLE CLASS ---
+   This styles anything you give class="highlight" to.
+   Nothing uses it yet — that's YOUR task below. */
+.highlight {
+  background-color: #fff3cd;   /* pale yellow, like a highlighter */
+  padding: 2px 6px;
+  border-radius: 4px;
+}

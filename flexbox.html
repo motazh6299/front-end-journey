@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Practice</title>
+    <link rel="stylesheet" href="flexbox.css" />
+  </head>
+
+  <body>
+    <!-- ===== 1) NAV BAR: the classic Flexbox row =====
+         A logo on the left, links on the right. This layout is on almost
+         every website you've ever visited — and it's pure Flexbox. -->
+    <nav class="navbar">
+      <div class="logo">Motaz.dev</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>Flexbox Practice</h1>
+      <p>Everything below is arranged with Flexbox. Try the tasks!</p>
+
+      <!-- ===== 2) CARD ROW: flex items sitting side by side ===== -->
+      <h2>A row of cards</h2>
+      <div class="card-row">
+        <div class="card">
+          <h3>HTML</h3>
+          <p>The skeleton of every web page.</p>
+        </div>
+        <div class="card">
+          <h3>CSS</h3>
+          <p>Makes pages beautiful.</p>
+        </div>
+        <div class="card">
+          <h3>JavaScript</h3>
+          <p>Makes pages interactive.</p>
+        </div>
+        <div class="card">
+          <h3>JavaScript</h3>
+          <p>Makes pages interactive.</p>
+        </div>
+      </div>
+
+      <!-- ===== 3) PERFECT CENTERING: the famous Flexbox trick ===== -->
+      <h2>Perfect centering (both directions)</h2>
+      <div class="center-box">
+        <div class="badge">I'm perfectly centered! 🎯</div>
+      </div>
+    </main>
+  </body>
+</html>

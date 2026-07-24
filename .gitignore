@@ -1,0 +1,15 @@
+# .gitignore — files/folders Git should IGNORE (never track or upload).
+
+# Local editor & tooling settings (not part of the project itself)
+.claude/
+
+# Dependencies (we'll have these once we start using npm — huge, never commit them)
+node_modules/
+
+# Operating system junk files
+.DS_Store
+Thumbs.db
+
+# Log & environment files
+*.log
+.env

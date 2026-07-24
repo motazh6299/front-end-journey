@@ -1,0 +1,133 @@
+/* ==========================================================================
+   flexbox.css — styles for the Flexbox practice page
+   ========================================================================== */
+
+/* --- Basic page setup --- */
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Arial,
+    sans-serif;
+  color: #1a202c;
+  margin: 0; /* remove the browser's default page margin */
+  background-color: #f7f8fa;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto; /* center the content (you know this trick now!) */
+  padding: 20px;
+}
+
+/* ============================================================
+   1) THE NAV BAR
+   ============================================================ */
+.navbar {
+  display: flex; /* ← TURN ON Flexbox: children line up in a row */
+  justify-content: space-around; /* logo pushed to far left, links to far right */
+  align-items: center; /* vertically center everything inside the bar */
+  gap: 16px;
+  background-color: #2b6cb0;
+  padding: 16px 24px;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nav-links {
+  display: flex; /* the links are ALSO a little flex row */
+  gap: 20px; /* space between each link */
+  list-style: none; /* remove the bullet points from the <li> */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* ============================================================
+   2) THE CARD ROW
+   ============================================================ */
+.card-row {
+  display: flex; /* cards sit side by side */
+  gap: 9px; /* space between cards */
+  flex-wrap: wrap; /* on a narrow screen, cards drop to the next line */
+}
+
+.card {
+  flex: 1; /* each card grows to share the space equally */
+  min-width: 180px; /* ...but never skinnier than 180px (then they wrap) */
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #2b6cb0;
+}
+
+/* ============================================================
+   3) PERFECT CENTERING
+   The famous "center anything" trick: display:flex + these two lines.
+   ============================================================ */
+.center-box {
+  display: flex;
+  justify-content: center; /* center horizontally (along the MAIN axis) */
+  align-items: center; /* center vertically   (along the CROSS axis) */
+  height: 200px;
+  background-color: #edf2f7;
+  border-radius: 10px;
+}
+
+.badge {
+  background-color: #2b6cb0;
+  color: white;
+  padding: 16px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* ============================================================
+   4) RESPONSIVE DESIGN — a media query
+   Everything inside this @media block applies ONLY when the screen
+   is 600px wide or NARROWER (phones). Wider screens ignore it entirely.
+   ============================================================ */
+@media (max-width: 600px) {
+  body {
+    background-color: red;
+  }
+  /* On phones, stack the nav bar vertically instead of side by side */
+  .navbar {
+    flex-direction: column; /* logo on top, links underneath */
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Shrink the big heading so it fits a small screen nicely */
+  h1 {
+    font-size: 28px;
+  }
+
+  /* Make the centering demo box shorter on phones */
+  .center-box {
+    height: 140px;
+  }
+
+  .logo {
+    font-size: 26px;
+  }
+}

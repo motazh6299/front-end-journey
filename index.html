@@ -1,0 +1,67 @@
+<!doctype html>
+<!-- ^ Tells the browser: "This is a modern HTML5 document." Always the first line. -->
+
+<html lang="en">
+  <!-- ^ The root element. Everything lives inside <html>. lang="en" = the page is in English. -->
+
+  <head>
+    <!-- The <head> holds INFORMATION ABOUT the page. Nothing here shows on the page itself. -->
+    <meta charset="UTF-8" />
+    <!-- ^ Lets the page show any character/emoji correctly. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ^ Makes the page work properly on phones. Memorize this line; every page needs it. -->
+    <title>Motaz — My First Web Page</title>
+    <!-- ^ The text shown in the browser TAB. -->
+
+    <link rel="stylesheet" href="styles.css" />
+    <!-- ^ THIS LINE connects our CSS file. href = the file name.
+         This is how HTML and CSS meet. Without it, the styles do nothing. -->
+  </head>
+
+  <body>
+    <!-- The <body> holds everything the visitor actually SEES. -->
+
+    <h1>Hi, I'm Motaz 👋</h1>
+    <!-- ^ h1 = the biggest, most important heading. Use ONLY ONE h1 per page. -->
+
+    <p>I'm learning to become a professional front-end web engineer.</p>
+    <!-- ^ p = a paragraph of text. -->
+
+    <h2>Why I'm learning this</h2>
+    <!-- ^ h2 = a sub-heading. Headings go h1 → h2 → h3 in order of importance. -->
+
+    <p>I want to build websites and get hired as a developer.</p>
+
+    <h2>My Hobbies</h2>
+    <p>playing football and Coding</p>
+
+    <h2>Things I want to learn</h2>
+    <ul>
+      <!-- ul = "unordered list" (bullet points). Each item goes in an <li>. -->
+      <li>HTML</li>
+      <li>CSS</li>
+      <li class="highlight">JavaScript</li>
+      <li>React</li>
+      <li>Typescript</li>
+      <li>Test</li>
+    </ul>
+
+    <h2>A link and an image</h2>
+    <p>
+      Here is a link:
+      <a href="https://developer.mozilla.org"
+        >Visit MDN, the developer's dictionary</a
+      >
+      <!-- ^ a = anchor (a link). href = where it goes. -->
+    </p>
+    <p>Link to fav website: <a href="https://www.google.com">Click here</a></p>
+
+    <img
+      src="https://placehold.co/300x150"
+      alt="A placeholder image"
+      width="300"
+    />
+    <!-- ^ img = an image. src = the image address. alt = text shown if the image fails
+       (also read aloud to blind users — always include it). Note: img has NO closing tag. -->
+  </body>
+</html>
