@@ -43,7 +43,7 @@ Legend: ✅ done · 🔄 in progress · ⬜ not started
 | 2.5 | CSS quirk: body background propagates to the whole canvas unless html has its own background | 2026-07-25 | ✅ Done |
 | 3 | Flexbox: display:flex, main vs cross axis, justify-content, align-items, gap, flex-wrap, flex:1, perfect centering | 2026-07-25 | ✅ Done |
 | 4 | Responsive design: viewport meta, media queries, breakpoints, mobile-first, testing in DevTools | 2026-07-25 | ✅ Done |
-| 5 | Git & GitHub: version control, init/add/commit, pushing to GitHub for a portfolio | 2026-07-25 | 🔄 In progress |
+| 5 | Git & GitHub: version control, init/add/commit, remote, push to GitHub for a portfolio | 2026-07-25 | ✅ Done |
 
 ---
 
@@ -53,7 +53,9 @@ Legend: ✅ done · 🔄 in progress · ⬜ not started
 |---------|-----------|-------------|--------|
 | `index.html` | My first "About Me" page | HTML | ✅ v1 done |
 | `styles.css` | Styling for the About Me page | CSS | ✅ v1 done |
-| `flexbox.html` + `flexbox.css` | Flexbox playground: nav bar, card row, centering | HTML, CSS, Flexbox | 🔄 In progress |
+| `flexbox.html` + `flexbox.css` | Flexbox playground: nav bar, card row, centering, responsive | HTML, CSS, Flexbox, media queries | ✅ Done |
+
+**🌐 My GitHub portfolio:** https://github.com/motazh6299/front-end-journey
 
 ---
 
